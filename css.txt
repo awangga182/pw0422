@@ -1,0 +1,124 @@
+
+Skip to content
+This repository
+
+    Pull requests
+    Issues
+    Marketplace
+    Explore
+
+    @awangga182
+
+0
+0
+
+    0
+
+Hijrawan/pw0455
+Code
+Issues 0
+Pull requests 0
+Projects 0
+Wiki
+Insights
+pw0455/style.css
+95740c0 19 hours ago
+@Hijrawan Hijrawan New Form Login
+81 lines (81 sloc) 1.21 KB
+body{
+	margin: 0;
+	padding: 0;
+	background: url(image/kursi.jpg);
+	font-family: sans-serif;
+}
+.loginBox
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 350px;
+	min-height: 200px;
+	background: #fff;
+	border-radius: 10px;
+	padding: 40px;
+	box-sizing: border-box;
+}
+.user
+{
+	margin: 0 auto;
+	display: block;
+	margin-bottom:20px: 
+}
+h3
+{
+	margin: 0;
+	padding: 0 0 20px;
+	color: #262626;
+	text-align: center;
+}
+.loginBox input
+{
+	width: 100%;
+	margin-bottom: 20px;
+}
+.loginBox input[type="text"],
+.loginBox input[type="password"]
+{
+	border: none;
+	border-bottom: 2px solid #262626;
+	outline: none;
+	height: 40px;
+	color: #262626;
+	background: transparent;
+	font-size: 16px;
+	padding-left: 20px;
+	box-sizing: border-box;
+}
+.loginBox input[type="text"]:focus,
+.loginBox input[type="password"]:focus
+{
+	border-bottom: 2px solid #f00;
+}
+.inputBox span
+{
+	position: absolute;
+	top: 10px;
+	color: #262626;
+}
+.loginBox input[type="submit"]
+{
+	border: none;
+	outline: none;
+	height: 40px;
+	font-size: 16px;
+	background: #ed292a;
+	color: #fff;
+	border-radius: 20px;
+	cursor: pointer;
+}
+.loginBox a
+{
+	color: #262626;
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration:none;
+	text-align: center;
+	display: block;
+}
+
+    © 2018 GitHub, Inc.
+    Terms
+    Privacy
+    Security
+    Status
+    Help
+
+    Contact GitHub
+    API
+    Training
+    Shop
+    Blog
+    About
+
+Press h to open a hovercard with more details.
