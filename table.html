@@ -6,6 +6,16 @@ table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 850px;
+  min-height: 400px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 1px;
+  box-sizing: border-box;
 }
 
 td {
@@ -18,17 +28,21 @@ th {
     border: 1px solid black;
     text-align: left;
     padding: 8px;
-    background-color: #dddddd;
+    background-color:hsl(240,  20%, 50%);
+    color: white;
 }
+
+
+
 
 </style>
 </head>
-<body style="margin-left: 10px; margin-right: 10px; background-image: url(images/bg1.jpg);">
+<body style="margin-left: 10px; margin-right: 10px; background-image: url(images/bg2.jpg);">
 
-<h2>Data Karyawan</h2>
+<h2 style=" text-align: center;">Data Karyawan</h2>
 
 <table>
-  <tr style=" background-color: black; color: black;">
+  <tr >
     <th>Name</th>
     <th>Position</th>
     <th>office</th>
