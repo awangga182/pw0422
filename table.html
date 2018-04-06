@@ -16,13 +16,23 @@ table {
   border-radius: 10px;
   padding: 1px;
   box-sizing: border-box;
+  table-layout: fixed;
+  text-align: center;
 }
 
-td {
+td{
     border: 1px solid black;
     text-align: left;
     padding: 8px;
-    background-color: #dddddd;
+    background-color: white;
+
+}
+td:hover{
+    border: 1px solid purple;
+    text-align: left;
+    padding: 8px;
+    background-color: hsla(240,  20%, 50%, 0.5);
+
 }
 th {
     border: 1px solid black;
@@ -39,9 +49,10 @@ th {
 </head>
 <body style="margin-left: 10px; margin-right: 10px; background-image: url(images/bg2.jpg);">
 
-<h2 style=" text-align: center;">Data Karyawan</h2>
+<h2 style=" text-align: center;">PT.Kerja Paksa</h2>
 
 <table>
+<h2 align="center">Data Karyawan</h2>
   <tr >
     <th>Name</th>
     <th>Position</th>

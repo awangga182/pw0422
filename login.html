@@ -1,29 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
- <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
 	<title>Login</title>
   
 </head>
-<div style=" background-color:hsla(260, 100%, 85%, 0.5); padding-left: 0.5em; ">
-		<h1>Form Login</h1>
-<body style=" margin-left: 250px; margin-right: 500px; margin-top: 100px; text-align: center; background-image: url(images/bg2.jpg);  ">
-		<p style="text-align: center;">Silahkan login di form berikut ini untuk <br>menggunakan sistem akademik di <br>Universitas Amikom Yogyakarta  </p>
 
- <br>
- 
+		
+  <body style=" background-image: url(images/bg2.jpg);  ">
+
+		  <p style="text-align: center;">Silahkan login di form berikut ini untuk <br>menggunakan sistem akademik di <br>Universitas Amikom Yogyakarta  </p>
+
+  <div class="loginbox"> 
+    <h1 style="color: hsl(240, 100%, 90%)">Login</h1>
   <form action="/action_page.php">
-    User name<br>
-  <input type="text" name="username"><br>
-  User password<br>
-  <input type="password" name="psw"><br>
+    
+  <input type="text" name="username" placeholder="username"><br>
+  
+  <input type="password" name="psw" placeholder="password"><br><br>
 
   <input type="checkbox" name="ingat" value="yes"> Remember Me <br><br>
 
   <input type="submit" value="Login"><br><br>
 
-</form> 
-</div>
+  </form> 
+
+    </div>
+
+ <br>
+ 
+ 
+
 </body>
 
 </html>
