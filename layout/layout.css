@@ -1,0 +1,78 @@
+body{
+
+}
+
+.header{
+width: 1050px;
+height: 120px;
+
+
+background: hsl(60, 100%, 50%);
+color: hsl(24, 100%, 50%) ;
+font-family: verdana;
+margin-right: -1em;
+margin-left: -0.5em;
+padding-bottom: 0px;
+
+}
+
+.header h1{
+	float: right;
+ text-align: right;
+ margin-right:  20px;
+ font-family: verdana;
+ padding: 5px;
+ padding-right: 1em;
+ padding-left: 1em; 
+border-radius: 10px;
+
+background: hsla(30, 100%, 60%, 0.5);
+}
+
+.header small{
+font-size: 50%;
+color: white;
+}
+
+.menu{
+	float: left;
+	margin-left: -0.5em;
+	width: 1040px;
+	height: 50px;
+	background: hsl(30, 100%, 60%);
+	padding: 5px;
+}
+
+.menu ul li{
+display: inline;
+}
+.menu ul li a{
+margin: 0 px;
+color: white ;
+text-decoration: none;
+padding: 2px;
+}
+
+.menu ul li a:hover{
+margin: 0 px;
+color: ;
+text-decoration: none;
+background: red;
+border-radius: 30px;
+}
+
+.content{
+	width: 1050px;
+	height: 400px;
+	margin-left: -0.5em;
+	content: 5px;
+	background: hsla(24, 100%, 50%, 0.5);
+}
+.subcon{
+	width: 300px;
+	height: 300px;
+	background: white;
+	margin: 0 auto;
+}
+
+

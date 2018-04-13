@@ -6,14 +6,15 @@ body{
 
 .loginbox{
   	font-family: arial, sans-serif;
+  	background-blend-mode: 23px;
   border-collapse: collapse;
   width: 100%;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
-  width: 350px;
-  min-height: 200px;
+  width: 300px;
+  min-height: 300px;
   background: hsla(180, 100%, 90%, 0.5);
   border-radius: 10px;
   padding: 5px;
