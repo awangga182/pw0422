@@ -1,0 +1,62 @@
+body{
+
+}
+
+.header{
+background: hsl(60, 100%, 50%);
+color: hsl(24, 100%, 50%) ;
+font-family: verdana;
+padding-bottom: 0px;
+}
+
+.header h1{
+float: right;
+text-align: right;
+margin-right:  20px;
+font-family: verdana;
+padding: 5px;
+border-radius: 10px;
+background: hsla(30, 100%, 60%, 0.5);
+}
+
+.header small{
+font-size: 50%;
+color: white;
+}
+
+.menu{
+	float: left;
+	background: hsl(30, 100%, 60%);
+}
+
+.menu ul li{
+display: inline;
+}
+.menu ul li a{
+margin: 0 px;
+color: white ;
+text-decoration: none;
+padding: 2px;
+}
+
+.menu ul li a:hover{
+margin: 0 px;
+color: red;
+text-decoration: none;
+background: red;
+border-radius: 30px;
+}
+
+.content{
+	text-align: center;
+	background: hsla(24, 100%, 50%, 0.5);
+}
+.subcon{
+
+	text-align: center;
+	background: white;
+	display: inline-flex;
+	border: 5px solid white;
+}
+
+
