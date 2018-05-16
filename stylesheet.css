@@ -1,0 +1,95 @@
+body{  
+background: url(images/bg1.jpg); max-height 417px;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    border: 1px solid gray;
+}
+header, footer {
+    padding: 5px;
+    color: white;
+    background-color: #333;
+    clear: left;
+    height: 40px;
+}
+
+header ul{
+ display: inline-flex;
+}
+header li{
+  position: relative;
+
+} 
+header li a{
+  display: block;
+}
+
+nav {
+    float: left;
+    max-width: 160px;
+    margin: 5px;
+    padding: 1em;
+}
+
+nav ul {
+    
+    padding: 0;
+}
+   
+nav ul a {
+    text-decoration: none;
+}
+ 
+
+article {
+    margin-left: 170px;
+    border-left: 1px solid gray;
+    padding: 1em;
+    overflow: hidden;
+    font-family: calibri;
+}
+.headerlist {
+    list-style-type: none;
+    background-color: #333;    
+}
+a:link {
+    color: green; 
+    background-color: transparent; 
+    text-decoration: none;
+}
+
+a:visited {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}
+.loginbox{
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 350px;
+  min-height: 300px;
+  background: url(images/bg1.jpg);
+  border-radius: 10px;
+  padding: 5px;
+  box-sizing: border-box;
+  text-align: center;
+  }

@@ -3,8 +3,7 @@ body{
 }
 
 .header{
-background: hsl(60, 100%, 50%);
-color: hsl(24, 100%, 50%) ;
+background:#d279a6;
 font-family: verdana;
 padding-bottom: 0px;
 }
@@ -12,11 +11,12 @@ padding-bottom: 0px;
 .header h1{
 float: right;
 text-align: right;
-margin-right:  20px;
+margin:  20px;
 font-family: verdana;
 padding: 5px;
 border-radius: 10px;
-background: hsla(30, 100%, 60%, 0.5);
+background: #e6b3cc;
+color: #d279a6;
 }
 
 .header small{
@@ -25,31 +25,33 @@ color: white;
 }
 
 .menu{
-	float: left;
-	background: hsl(30, 100%, 60%);
+	padding: 5px;
+	background: #ff99cc;
 }
 
 .menu ul li{
 display: inline;
+border-radius: 0px;
 }
 .menu ul li a{
-margin: 0 px;
+margin:  0px;
+
 color: white ;
 text-decoration: none;
-padding: 2px;
+padding: 5px;
 }
 
 .menu ul li a:hover{
 margin: 0 px;
-color: red;
 text-decoration: none;
-background: red;
-border-radius: 30px;
+background: #d279a6;
+border-radius: 0px;
 }
 
 .content{
 	text-align: center;
-	background: hsla(24, 100%, 50%, 0.5);
+	background: #ffcccc;
+	height: 100%;
 }
 .subcon{
 
