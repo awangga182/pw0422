@@ -38,14 +38,14 @@
   </ul>
 </div>
 
-<ng-view></ng-view>
+<div ng-view></div>
 
 <script>
 var app = angular.module("myApp", ["ngRoute"]);
 app.config(function($routeProvider) {
     $routeProvider
     .when("/", {
-        templateUrl : "main.htm"
+        templateUrl : "home.htm"
     })
     .when("/red", {
         templateUrl : "product.htm"
