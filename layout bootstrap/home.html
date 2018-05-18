@@ -1,31 +1,74 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8"> 
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+  <title>tes</title>
 
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="layout.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <script type="text/javascript" src="js/bootstrap.js"></script>
     <link rel="stylesheet" type="text/css" href="fa/web-fonts-with-css/css/fontawesome-all.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+
+</head>
+
+<body>
+
+<div  ng-app="myApp" class="container-fluid">
+<!-- header -->
+<div class="row">
+<div class="col-md-12 header">
+  <h1> Bootstrap
+  </h1>
+</div>
+
+
+
+
+<!-- menu -->
+<div class="col-md-12 menu">
+  <ul>
+    <li><a href="#!home">home</a></li>
+    <li><a href="#">product</a></li>
+    <li><a href="#!about">about</a></li>
+    <li><a href="#">contact</a></li>
+  </ul>
+</div>
+
+<ng-view></ng-view>
+
+<script>
+var app = angular.module("myApp", ["ngRoute"]);
+app.config(function($routeProvider) {
+    $routeProvider
+    .when("/", {
+        templateUrl : "main.htm"
+    })
+    .when("/red", {
+        templateUrl : "product.htm"
+    })
+    .when("/green", {
+        templateUrl : "about.htm"
+    })
+    .when("/blue", {
+        templateUrl : "contact.htm"
+    });
+});
+</script>
+
+<!-- content -->
+<div class="col-md-12 content">
   
-  </head>
+  <p> dis home</p>
 
-  <body>
-  	<div class="container">
-  		<div class="row">
-       <div class="col-md-12 header">
-        <h2> berita masa lalu</h2>
-       </div>  
-      </div>
-     
-
-     <button type="button" class="btn btn-primary btn-sm">first
-      <i class="fas fa-angle-double-left"></i>
-      </button>
-
-      <button type="button" class="btn btn-outline-primary"> Primary</button>
-      <button type="button" class="btn btn-primary btn-sm"><i class="fas fa-angle-double-right"></i>last</button>
-  	</div>
+  </div>
+</div>
+</div>
 
 
-  </body>
+</div>
+</body>
 </html>
