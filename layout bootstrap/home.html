@@ -1,74 +1,57 @@
-<!DOCTYPE <!DOCTYPE html>
-<html>
-<head>
-  <title>tes</title>
-
-  <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="layout.css">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"> 
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-    <script type="text/javascript" src="js/bootstrap.js"></script>
-    <link rel="stylesheet" type="text/css" href="fa/web-fonts-with-css/css/fontawesome-all.css">
+   
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
 
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    <script>
+    	var app = angular.module("myApp", ["ngRoute"]);
+    	app.config(function($routeProvider){
+    		$routeProvider
+		    .when("/", {
+		        templateUrl : "main.htm"
+		    })
+		    .when("/about", {
+		    	templateUrl : "about.htm"
+		    });
 
-</head>
+    	});
+    </script>
 
-<body>
+  </head>
 
-<div  ng-app="myApp" class="container-fluid">
-<!-- header -->
-<div class="row">
-<div class="col-md-12 header">
-  <h1> Bootstrap
-  </h1>
-</div>
+  <body>
 
+  	<div ng-app="myApp" class="container-fluid">
+  	  <div class="row">
+  	  	<div class="col-md-12 header">
+  	  		<h1>Title of the Web</h1>
+  	  	</div>
+	  </div>
 
+	  <div class="row">
+	  	<div class="col-md-12 menu">
+	  		<a href="#/!"><i class="fas fa-home"></i> 
+	  		Home</a> | 
+	  		<a href="#!about">About</a> | 
+	  		<a href="#!product">Product</a> | 
+	  		<a href="#!contact">Contact</a>
+	  	</div>
+	  </div>
 
+	  <ng-view></ng-view>
 
-<!-- menu -->
-<div class="col-md-12 menu">
-  <ul>
-    <li><a href="#!home">home</a></li>
-    <li><a href="#">product</a></li>
-    <li><a href="#!about">about</a></li>
-    <li><a href="#">contact</a></li>
-  </ul>
-</div>
+	  <div class="row">
+	  	<hr />
+	  	<div class="col-md-12">&copy; 2018 - Arif Laksito</div>
+	  </div>
 
-<div ng-view></div>
+	</div>
 
-<script>
-var app = angular.module("myApp", ["ngRoute"]);
-app.config(function($routeProvider) {
-    $routeProvider
-    .when("/", {
-        templateUrl : "home.htm"
-    })
-    .when("/red", {
-        templateUrl : "product.htm"
-    })
-    .when("/green", {
-        templateUrl : "about.htm"
-    })
-    .when("/blue", {
-        templateUrl : "contact.htm"
-    });
-});
-</script>
+  </body>
 
-<!-- content -->
-<div class="col-md-12 content">
-  
-  <p> dis home</p>
-
-  </div>
-</div>
-</div>
-
-
-</div>
-</body>
 </html>
